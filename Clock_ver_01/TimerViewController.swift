@@ -2,7 +2,7 @@
 //  TimerViewController.swift
 //  Clock_ver_01
 //
-//  Created by 민경준 on 2017. 10. 1..
+//  Created by 민경준 on 2017. 12. 1..
 //  Copyright © 2017년 민경준. All rights reserved.
 //
 
