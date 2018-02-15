@@ -166,6 +166,9 @@ class TimerViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+
         var date = Date()
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy/MM/dd"
@@ -290,6 +293,4 @@ class TimerViewController: UIViewController{
             return "ERROR"
         }
     }
-    
-
 }

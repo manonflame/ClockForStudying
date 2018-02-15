@@ -10,6 +10,7 @@
 		D808CD43A87E216A4EEB604F /* Pods_Clock_ver_01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C416BCEBFCDE8AE50A58D69 /* Pods_Clock_ver_01.framework */; };
 		F931BC601F80F905004917DB /* Carre.otf in Resources */ = {isa = PBXBuildFile; fileRef = F931BC5E1F80F8EC004917DB /* Carre.otf */; };
 		F931BC611F80F908004917DB /* Carre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F931BC5F1F80F8EC004917DB /* Carre.ttf */; };
+		F941EB3F2029B53A005AACA4 /* AlarmInfoSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F941EB3E2029B53A005AACA4 /* AlarmInfoSingleton.swift */; };
 		F9FC7E791F80D97F007F448A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FC7E781F80D97F007F448A /* AppDelegate.swift */; };
 		F9FC7E7E1F80D97F007F448A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FC7E7C1F80D97F007F448A /* Main.storyboard */; };
 		F9FC7E801F80D97F007F448A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FC7E7F1F80D97F007F448A /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		E6583BB65A4092A746AE0447 /* Pods-Clock_ver_01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clock_ver_01.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clock_ver_01/Pods-Clock_ver_01.release.xcconfig"; sourceTree = "<group>"; };
 		F931BC5E1F80F8EC004917DB /* Carre.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Carre.otf; sourceTree = "<group>"; };
 		F931BC5F1F80F8EC004917DB /* Carre.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Carre.ttf; sourceTree = "<group>"; };
+		F941EB3E2029B53A005AACA4 /* AlarmInfoSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmInfoSingleton.swift; sourceTree = "<group>"; };
 		F99347FA1F8112A700C2003B /* Clock-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clock-Bridge-Header.h"; sourceTree = "<group>"; };
 		F9FC7E751F80D97F007F448A /* Clock_ver_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock_ver_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FC7E781F80D97F007F448A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				F931BC5E1F80F8EC004917DB /* Carre.otf */,
 				F931BC5F1F80F8EC004917DB /* Carre.ttf */,
 				F99347FA1F8112A700C2003B /* Clock-Bridge-Header.h */,
+				F941EB3E2029B53A005AACA4 /* AlarmInfoSingleton.swift */,
 			);
 			path = Clock_ver_01;
 			sourceTree = "<group>";
@@ -198,7 +201,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		76EA8D718EDB70575FCF7200 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -216,7 +219,7 @@
 		};
 		A0E610C780B4745192A6DDAE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -231,7 +234,7 @@
 		};
 		A3248F05DC5FEDAA313A827C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -261,6 +264,7 @@
 				F9FC7E8D1F80E123007F448A /* TimerViewController.swift in Sources */,
 				F9FC7E961F80E666007F448A /* Subject.swift in Sources */,
 				F9FC7E8B1F80DEB3007F448A /* ClockViewController.swift in Sources */,
+				F941EB3F2029B53A005AACA4 /* AlarmInfoSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,15 +402,17 @@
 			baseConfigurationReference = CABA83F89E1AAB0CF70D1E9F /* Pods-Clock_ver_01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SMWAEJPYXQ;
 				INFOPLIST_FILE = Clock_ver_01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KJ.Clock-ver-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/KyungJunMin/Desktop/iOS/Clock_ver_01/Clock_ver_01/Clock-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/FSCalendar/FSCalendar\"";
 			};
 			name = Debug;
@@ -416,15 +422,17 @@
 			baseConfigurationReference = E6583BB65A4092A746AE0447 /* Pods-Clock_ver_01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SMWAEJPYXQ;
 				INFOPLIST_FILE = Clock_ver_01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "KJ.Clock-ver-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/KyungJunMin/Desktop/iOS/Clock_ver_01/Clock_ver_01/Clock-Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/FSCalendar/FSCalendar\"";
 			};
 			name = Release;
